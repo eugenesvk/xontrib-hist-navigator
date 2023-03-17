@@ -1,27 +1,16 @@
 # xontrib-hist-navigator
 
-Fish-shell like `prevd` and `nextd` for [xonsh](https://github.com/xonsh/xonsh/) with keyboard shortcuts
+Inline (within the same prompt line) dir history navigation with keyboard shortcuts for [xonsh](https://github.com/xonsh/xonsh/)
 
-# Installation
+This fork allows for much more ergonomic configuration of keyboard shortcuts, e.g., `a-x` or `⎇x` insead of `['escape','x']`
 
-- install using pip
-```sh
-pip install xontrib-hist-navigator
+# Install
+
+```xsh
+xpip install -U git+https://github.com/eugenesvk/xontrib-hist-navigator
 ```
 
-- or xpip (that is installed alongside xonsh)
-
-```sh
-xpip install xontrib-hist-navigator
-```
-
-- add to list of xontribs loaded.
-
-```sh
-xontrib load hist_navigator
-```
-
-# Usage
+# Configure
 
 1. Add the following to your `.py` xontrib loading config and `import` it in your xonsh run control file (`~/.xonshrc` or `~/.config/rc.xsh`):
 ```py
@@ -54,20 +43,13 @@ xontrib load hist_navigator
 $XSH_HISTNAV_KEY_PREV	= "⎇←" # ...
 ```
 
-# Overview
+# Use
 
-- it keeps track of `cd` usage per session
-- Shortcuts
+It keeps track of `cd` usage per session and adds 3 new commands while allowing keyboard shortcuts to update existing prompt instead of creating a new line
 
-| command | description                                                        | shortcut          |
-| ------- | ------------------------------------------------------------------ | ----------------- |
-| prevd   | move to previous working directory                                 | Alt + Left Arrow  |
-| nextd   | move to next working directory in the history (if `prevd` is used) | Alt + Right Arrow |
-| listd   | list cd history                                                    |                   |
-| cd ..   | move to parent directory                                           | Alt + Up Arrow    |
-
-# Release
-
-```sh
-semantic-release --patch # or --minor/--major
-```
+| command	| description                                                            	| default shortcut        	|
+| -------	| -----------------------------------------------------------------------	| --------                	|
+| `prevd`	| move to previous working directory in history                          	| <kbd>⎇</kbd><kbd>◀</kbd>	|
+| `nextd`	| move to next working directory in history<br/>(if `prevd` is used)     	| <kbd>⎇</kbd><kbd>▶</kbd>	|
+| `listd`	| list cd history                                                        	|                         	|
+|        	| move to parent directory                                               	| <kbd>⎇</kbd><kbd>▲</kbd>	|
