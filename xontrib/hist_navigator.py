@@ -167,7 +167,7 @@ def _parse_key_user(key_user):
         '◀':'left' ,'←':'left' ,
         '▶':'right','→':'right',
     }
-    _alts = ['a-','⌥','⎇']
+    _alts = ['a-','alt-','⌥','⎇']
 
     for k,v in _key_symb.items(): # replace symbols
         if k in key_user: # replace other keys

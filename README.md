@@ -39,7 +39,7 @@ if 'hist_navigator' in xontribs: # configure xontrib only if it's loaded
   envx["XSH_HISTNAV_KEY_NEXT"] = "⎇→"  #|['escape','right']|False¦ Move to the next working directory in the history (if 'prevd' was used)
   envx["XSH_HISTNAV_KEY_UP"]   = "⎇↑"  #|['escape','up'   ]|False¦ Move to the parent directory
   # run to see the allowed list for ↑: from prompt_toolkit.keys import ALL_KEYS; print(ALL_KEYS)
-  # Alt is also supported as either of: a- ⎇ ⌥ (converted to a prefix 'escape')
+  # Alt is also supported as either of: a- alt- ⎇ ⌥ (converted to a prefix 'escape')
   # Control symbols are also supported as either of: ⎈ ⌃
   # Arrow key symbols are also supported as either of: ▼▲◀▶ ↓↑←→
   envx["XSH_HISTNAV_EMPTY_PROMPT"] = False #|True|False¦ Keybinds only work in an empty prompt
