@@ -22,7 +22,7 @@ authors = [
 license = {text = "MIT"}
 requires-python = ">=3.7"
 dependencies = [
-    "xonsh>=0.11",
+    "xonsh>=0.18",
     "prompt-toolkit",
 ]
 name = "xontrib-hist-navigator"
