@@ -1,6 +1,8 @@
 # Changelog
 
 <!--next-version-placeholder-->
+  - __Fixed__
+    + 🐞 work with changed paths in xonsh v18
 
 ## v0.6.5 (2023-03-16)
 
