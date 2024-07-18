@@ -7,7 +7,7 @@ from xonsh.built_ins import XSH
 from prompt_toolkit.keys import ALL_KEYS
 from xonsh.style_tools import partial_color_tokenize
 from prompt_toolkit.formatted_text import PygmentsTokens
-from xonsh.ptk_shell.shell import tokenize_ansi
+from xonsh.shells.ptk_shell import tokenize_ansi
 from xonsh.tools import print_color
 
 envx = XSH.env or {}
