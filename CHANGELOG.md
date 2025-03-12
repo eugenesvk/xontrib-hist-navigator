@@ -45,6 +45,10 @@ https://python-semantic-release.readthedocs.io/en/latest/migrating_from_v7.html#
   ([`702c36a`](https://github.com/jnoortheen/xontrib-hist-navigator/commit/702c36a6d9d5ddef4674b034013ef30c68c2ab5d))
 
 
+## v0.6.6 (2024-07-18)
+  - __Fixed__
+    + 🐞 work with changed paths in xonsh v18
+
 ## v0.6.5 (2023-03-16)
 
 ### Chores
