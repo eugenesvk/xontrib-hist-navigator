@@ -148,3 +148,10 @@ In this case the last example would behave differently:
 As you can see `~/BASE/sub` was dropped from history because it wasn't
 the last visited directory at the time of changing the directory to
 `/tmp`.
+
+# Release
+
+```sh
+semantic-release --patch # or --minor/--major
+```
+
